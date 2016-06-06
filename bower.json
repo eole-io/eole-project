@@ -1,0 +1,11 @@
+{
+    "name": "alcalyn/eole-project",
+    "ignore": [
+        "bower_components"
+    ],
+    "dependencies": {
+        "tether": "~1.0",
+        "jquery": "~2.0",
+        "bootstrap": "~4.0"
+    }
+}
