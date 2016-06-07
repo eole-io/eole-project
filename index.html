@@ -7,11 +7,147 @@
 
         <title>Eole Project</title>
 
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
+        <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css" type="text/css">
         <link rel="stylesheet" href="bower_components/tether/dist/css/tether.min.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.css">
     </head>
     <body>
-        <h1>Hello, world!</h1>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Eole</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>What is Eole ?</h2>
+
+            <p class="lead text-xs-center elevator-spitch">
+                <span class="bigger-1">Eole</span> is an online <span class="bigger-3">board games website</span>
+                for people who <span class="bigger-3">want to play</span>
+                to their favorite board game, but don't find
+                an <span class="bigger-2">online version of the game</span>.
+            </p>
+            <p class="lead text-xs-center">
+                <a class="btn btn-success" href="http://alcalyn.github.io/eole-angular/">
+                    <i class="fa fa-gamepad fa-lg" aria-hidden="true"></i>
+                    Demo application
+                </a>
+            </p>
+            <p>
+                It is an <strong>open-source project</strong>, and a <strong>free web application</strong>.
+            </p>
+            <p>
+                It aims to be an oasis for both <strong>board game players</strong> and <strong>developers</strong>.
+            </p>
+
+            <h2>Architecture</h2>
+
+            <p>
+                Eole consists on these two main projects hosted on Github:
+            </p>
+
+            <div class="card-deck-wrapper">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-header">
+                            Eole Api
+                        </div>
+                        <div class="card-block">
+                            <p class="card-text">
+                                The Api provides a Rest Api
+                                and a websocket server for real-time notification
+                                (i.e a player made a move).
+                            </p>
+                            <p class="card-text">
+                                It is built with following technologies/libraries:
+                            </p>
+                            <ul>
+                                <li>PHP 5.5</li>
+                                <li>Symfony</li>
+                                <li>Silex 2</li>
+                                <li>ReactPHP</li>
+                                <li>WAMP v1 protocol</li>
+                                <li>php-zmq extension</li>
+                                <li>ZMQ</li>
+                            </ul>
+                            <p class="card-text">
+                                <a class="btn btn-primary" href="https://github.com/alcalyn/eole-api">
+                                    <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+                                    See project on Github
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Eole Angular
+                        </div>
+                        <div class="card-block">
+                            <p class="card-text">
+                                The AngularJS project provides a front-side application.
+                            </p>
+                            <p class="card-text">
+                                It is built with following technologies/libraries:
+                            </p>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>AngularJS 1</li>
+                                <li>Autobahn 0.8</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                            <p class="card-text">
+                                <a class="btn btn-primary" href="https://github.com/alcalyn/eole-angular">
+                                    <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+                                    See project on Github
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+
+            <p>
+                As is, Eole is just a game platform,
+                and provides (or will provides in futur)
+                features like:
+            </p>
+
+            <ul>
+                <li>creating a game,</li>
+                <li>waiting for people to join,</li>
+                <li>real-time playing,</li>
+                <li>creating an account,</li>
+                <li>chat room,</li>
+                <li>organizing tournaments,</li>
+                <li>poker chips for bet games,</li>
+                <li>ranking system with Elo, win/loss/draw...</li>
+            </ul>
+
+            <h2>Extendability</h2>
+
+            <p>
+                Eole architecture allows to be extended easily by adding:
+            </p>
+            <ul>
+                <li>more endpoints for RestApi,</li>
+                <li>more topics for websocket server</li>
+                <li>and more AngularJS modules for web application.</li>
+            </ul>
+            <p>
+                So games can be developed independently of Eole domain and components,
+                and then just create a layer/bridge to extend Eole with your game endpoints, topics...
+            </p>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted text-xs-center">And then the footer...</p>
+            </div>
+        </footer>
 
         <script src="bower_components/tether/dist/js/tether.min.js"></script>
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
