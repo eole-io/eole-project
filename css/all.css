@@ -6,7 +6,7 @@ body {
     font-family: "Montserrat",helvetica,sans-serif;
     margin-bottom: 60px;
 }
-h1, h2, h3, h4, h5, h6 {
+section, header h1 {
     margin-top: 4%;
 }
 .bigger-1 {
