@@ -1,0 +1,12 @@
+{
+    "name": "eole-project",
+    "ignore": [
+        "bower_components"
+    ],
+    "dependencies": {
+        "components-font-awesome": "~4",
+        "tether": "~1",
+        "jquery": "~2",
+        "bootstrap": "~4"
+    }
+}
