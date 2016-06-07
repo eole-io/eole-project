@@ -4,8 +4,9 @@
         "bower_components"
     ],
     "dependencies": {
-        "tether": "~1.0",
-        "jquery": "~2.0",
-        "bootstrap": "~4.0"
+        "components-font-awesome": "~4",
+        "tether": "~1",
+        "jquery": "~2",
+        "bootstrap": "~4"
     }
 }
